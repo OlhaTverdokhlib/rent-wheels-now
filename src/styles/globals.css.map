@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "sources": [
+    "globals.scss",
+    "globals.css"
+  ],
+  "names": [],
+  "mappings": "AAAA;EACE,gBAAA;EACA,cAAA;EACA,0CAAA;EACA,gBAAA;EACA,kBAAA;EACA,mCAAA;EACA,sBAAA;ACCF;;ADCA;EACE,gBAAA;EACA,UAAA;EACA,SAAA;ACEF;;ADAA;EACE,cAAA;EACA,qBAAA;ACGF;;ADDA;EACE,oBAAA;EACA,qBAAA;EACA,wBAAA;EACA,aAAA;ACIF",
+  "file": "globals.css"
+}
