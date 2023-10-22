@@ -31,6 +31,7 @@ const CarCatalog = () => {
       .catch(error => {
         console.error('An error occurred while retrieving data:', error);
       });
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const toggleFavorite = car => {
