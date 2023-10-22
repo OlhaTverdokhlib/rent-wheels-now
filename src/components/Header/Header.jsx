@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../../logoWeels.png';
+import logo from '../../images/logoWeels.png';
 import headerStyle from './Header.module.scss';
 
 import { Link, NavLink } from 'react-router-dom';

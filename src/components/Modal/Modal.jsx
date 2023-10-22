@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import ReactDOM from 'react-dom';
 import modalStyles from './Modal.module.scss';
+import sprite from '../../images/sprite.svg';
 
 const Modal = ({ isOpen, onClose, car }) => {
   const fullAddress = car ? car.address : '';
@@ -52,7 +53,7 @@ const Modal = ({ isOpen, onClose, car }) => {
         <button onClick={onClose} className={modalStyles.block__close__btn}>
           <svg className={modalStyles.block__close__btn__icon}>
             <use
-              href="/images/sprite.svg#icon-x-close"
+              href={`${sprite}#icon-x-close`}
               width={24}
               height={24}
             />

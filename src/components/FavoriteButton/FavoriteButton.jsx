@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import buttonFavoriteStyles from "./FavoriteButton.module.scss";
+import sprite from "../../images/sprite.svg"
 
 
 
@@ -17,10 +18,7 @@ const FavoriteButton = ({ isFavorite, onToggle }) => {
 
     return (
       <>
-        <button
-          className={buttonFavoriteStyles.block} 
-          onClick={handleClick}
-        >
+        <button className={buttonFavoriteStyles.block} onClick={handleClick}>
           <svg
             className={`${buttonFavoriteStyles.block__icon} ${
               favorite ? buttonFavoriteStyles.block__icon__favorite : ''
@@ -28,10 +26,7 @@ const FavoriteButton = ({ isFavorite, onToggle }) => {
             width={18}
             height={18}
           >
-            <use
-              href="/images/sprite.svg#icon-heart"
-            
-            ></use>
+            <use href={`${sprite}#icon-heart`}></use>
           </svg>
         </button>
 
@@ -42,7 +37,7 @@ const FavoriteButton = ({ isFavorite, onToggle }) => {
           width={16}
           height={16}
         >
-          <use href="/images/sprite.svg#icon-download"></use>
+          <use href={`${sprite}#icon-download`}></use>
         </svg>
       </>
     );
