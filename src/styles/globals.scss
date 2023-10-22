@@ -1,3 +1,18 @@
+@import '~modern-normalize/modern-normalize';
+@import "./utilities/variables";
+@import "./utilities/fonts";
+
 body {
-    background-color: aquamarine;
+    background-color: $background-primary;
+     margin: 0 auto;
+  max-width: 1440px;
+  padding: 0;
+  font-family: 'Manrope', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: $primary-font-color;
+}
+
+li {
+  list-style-type: none;
 }

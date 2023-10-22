@@ -1,0 +1,15 @@
+@import "../../styles/utilities/mixins";
+@import "../../styles/utilities/variables";
+
+.block{
+    display: flex;
+    flex-direction: column;
+    padding: 150px 129px;
+    align-items: center;
+
+    &__box{
+         margin-right: auto;
+    margin-left: auto;
+    }
+
+}

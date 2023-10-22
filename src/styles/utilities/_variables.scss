@@ -1,0 +1,27 @@
+$background-primary: #FFF;
+$primary-font-color: #12141780;
+$secondary-font-color: #121417;
+$accent-color: #3470FF;
+$background-card-color: #F3F3F2;
+$stroke-color-overview: #1214171A;
+$stroke-color-favorite:  #ffffffcc;
+$conditions-font-color: #363535;
+$conditions-bg-color: #f9f9f9;
+$select-bg-color: #F7F7FB;
+$gradient-card: linear-gradient(to bottom, rgba(18, 20, 23, 1), rgba(18, 20, 23, 0));
+
+
+// breakpoints
+$phoneMax: 374.9px;
+$phoneMin: 375px;
+
+$tabletMax: 1023.9px;
+$tabletMin: 768px;
+
+$desktopMax: 1440px;
+$desktopMin: 1024px;
+
+
+// transition
+$cubic: cubic-bezier(0.4, 0, 0.2, 1);
+

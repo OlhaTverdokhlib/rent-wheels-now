@@ -1,0 +1,77 @@
+@import '../../styles/utilities/mixins';
+@import '../../styles/utilities/variables';
+
+.block {
+  display: flex;
+  gap: 18px;
+
+  &__item {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #8a8a89;
+    cursor: pointer;
+    &__mileage{
+        display: flex;
+
+       
+&__select{
+ width: 160px;
+  color: $secondary-font-color;
+    background-color: $select-bg-color;
+    padding: 14px 89px 14px 18px;
+ 
+   
+
+    border: none;
+    font-family: 'Manrope', sans-serif;
+    font-size: 18px;
+    line-height: 1.11;
+    color: $secondary-font-color;
+    &:first-child{
+ border-bottom-left-radius: 14px;
+     border-top-left-radius: 14px;
+     border-right: 1px solid rgba(138, 138, 137, 0.20);
+
+
+    }
+    &:last-child{
+         border-bottom-right-radius: 14px;
+     border-top-right-radius: 14px;
+    }
+  
+   
+}
+    }
+  }
+
+  &__select {
+    color: $secondary-font-color;
+    background-color: $select-bg-color;
+    padding: 14px 89px 14px 18px;
+    border-radius: 14px;
+    border: none;
+    font-family: 'Manrope', sans-serif;
+    font-size: 18px;
+    line-height: 1.11;
+    color: $secondary-font-color;
+    appearance: none;
+    overflow: hidden;
+
+    &__bg {
+      display: flex;
+      width: 16px;
+      height: 16px;
+      position: absolute;
+      background: url('../../Rectangle.png') no-repeat;
+      background-size: 16px 16px;
+      margin-right: 16px;
+      top: 40px;
+      right: 0;
+      z-index: 1000;
+    }
+  }
+}

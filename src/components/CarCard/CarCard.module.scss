@@ -1,0 +1,75 @@
+@import '../../styles/utilities/mixins';
+@import '../../styles/utilities/variables';
+
+.block {
+  display: flex;
+  flex-direction: column;
+
+  &__photo {
+    width: 274px;
+    height: 268px;
+    overflow: hidden;
+    border-radius: 14px;
+    position: relative;
+   
+
+    &__img {
+      width: auto;
+      height: 268px;
+ 
+    }
+  }
+  &__review {
+    color: $secondary-font-color;
+
+    &__name {
+      display: flex;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 1.5;
+      margin-top: 14px;
+      margin-bottom: 8px;
+
+      &__model {
+        color: $accent-color;
+      }
+    }
+    &__price {
+      margin-top: 0;
+      margin-left: auto;
+    }
+  }
+  
+&__overview {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  flex-wrap: wrap;
+
+  &__items {
+    display: inline;
+    padding: 0 6px;
+    border-left: 1px solid $stroke-color-overview;
+   
+
+    &:first-of-type {
+      border-left: none;
+      padding-left: 0;
+    }
+
+    &:last-child {
+      border-right: none;
+    }
+  }
+}
+
+
+
+
+  &__favorite__btn{
+    position: absolute;
+    top: 14px;
+    right: 0;
+    padding: 0;
+  }
+}
