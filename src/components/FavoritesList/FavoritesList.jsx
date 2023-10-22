@@ -2,6 +2,9 @@ import React, { useEffect, useState } from 'react';
 import { CarCard } from '../CarCard';
 import { getFavorites, removeFromFavorites } from '../../services/favoritesCars';
 import fetchCars from '../../services/fetchCars';
+import carListStyle from '../CarList/CarList.module.scss';
+import favoriteListStyle from '../FavoritesList/FavoritesList.module.scss';
+
 
 const FavoritesList = () => {
   const [favoriteCars, setFavoriteCars] = useState([]);
@@ -20,7 +23,7 @@ const FavoritesList = () => {
         getFavoritesList(data);
       })
       .catch(error => {
-        console.error('Помилка під час отримання даних:', error);
+        console.error('error', error);
       });
   }, []);
 
@@ -30,19 +33,22 @@ const FavoritesList = () => {
   };
 
   return (
-    <div>
-      <h1>Favorites</h1>
-      {favoriteCars.length > 0 ? (
-        favoriteCars.map(car => (
-          <CarCard
-            key={car.id}
-            car={car}
-            onRemoveFavorite={() => handleRemoveFavorite(car)}
-          />
-        ))
-      ) : (
-        <p>You have no favorite cars</p>
-      )}
+    <div className={favoriteListStyle.container}>
+      <div className={favoriteListStyle.block}>
+        <div className={carListStyle.list}>
+          {favoriteCars.length > 0 ? (
+            favoriteCars.map(car => (
+              <CarCard
+                key={car.id}
+                car={car}
+                onRemoveFavorite={() => handleRemoveFavorite(car)}
+              />
+            ))
+          ) : (
+            <p>You have no favorite cars</p>
+          )}
+        </div>
+      </div>
     </div>
   );
 };

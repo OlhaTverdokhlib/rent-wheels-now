@@ -103,7 +103,13 @@ const formatMileage = mileage => {
           <option value="140">$140</option>
           <option value="150">$150</option>
           <option value="160">$160</option>
+          <option value="170">$120</option>
+          <option value="180">$130</option>
+          <option value="190">$140</option>
+          <option value="200">$150</option>
+          <option value="210">$160</option>
         </select>
+        <div className={carsFilterStyles.block__select__bg}></div>
       </div>
       <div className={carsFilterStyles.block__item}>
         <label>Сar mileage / km</label>

@@ -103,8 +103,9 @@ const CarCatalog = () => {
   return (
     <div className={carCatalogStyle.block}>
       {/* <div> */}
-        
-        <div className={carCatalogStyle.block__box}>
+
+      <div className={carCatalogStyle.block__box}>
+        <div className={carCatalogStyle.block__box__filter}>
           <CarsFilter
             selectedMake={selectedMake}
             setSelectedMake={setSelectedMake}
@@ -121,36 +122,44 @@ const CarCatalog = () => {
               setSearchParams({ ...searchParams, maxMileage: value })
             }
           />
-          <button onClick={() => applyFilters(originalCars)}>Пошук</button>
-          <CarList
-            cars={cars}
-            favoriteCars={favoriteCars}
-            toggleFavorite={toggleFavorite}
-            openModal={openModal}
-          />
-          {originalCars.length > carsPerPage &&
-            currentPage * carsPerPage < originalCars.length &&
-            cars.length >= carsPerPage && cars.length < filterCars.length && (
-              <button onClick={loadMore}>Load More</button>
-            )}
+          <button
+            className={carCatalogStyle.block__box__filter__search__btn}
+            onClick={() => applyFilters(originalCars)}
+          >
+            Search
+          </button>
         </div>
-        {showModal && (
-          <div className="modal">
-            <div className="modal-content">
-              <span className="close" onClick={closeModal}>
-                &times;
-              </span>
-              {selectedCar && (
-                <>
-                  <h2>
-                    {selectedCar.make} {selectedCar.model}
-                  </h2>
-                  <a href="tel:+380730000000">Rental Car</a>
-                </>
-              )}
-            </div>
+
+        <CarList
+          cars={cars}
+          favoriteCars={favoriteCars}
+          toggleFavorite={toggleFavorite}
+          openModal={openModal}
+        />
+        {originalCars.length > carsPerPage &&
+          currentPage * carsPerPage < originalCars.length &&
+          cars.length >= carsPerPage &&
+          cars.length < filterCars.length && (
+          <button className={ carCatalogStyle.block__load__btn} onClick={loadMore}>Load More</button>
+          )}
+      </div>
+      {showModal && (
+        <div className="modal">
+          <div className="modal-content">
+            <span className="close" onClick={closeModal}>
+              &times;
+            </span>
+            {selectedCar && (
+              <>
+                <h2>
+                  {selectedCar.make} {selectedCar.model}
+                </h2>
+                <a href="tel:+380730000000">Rental Car</a>
+              </>
+            )}
           </div>
-        )}
+        </div>
+      )}
       {/* </div> */}
     </div>
   );

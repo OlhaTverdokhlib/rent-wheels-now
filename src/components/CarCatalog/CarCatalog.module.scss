@@ -1,15 +1,68 @@
-@import "../../styles/utilities/mixins";
-@import "../../styles/utilities/variables";
+@import '../../styles/utilities/mixins';
+@import '../../styles/utilities/variables';
 
-.block{
+.block {
+  display: flex;
+  flex-direction: column;
+  padding: 150px 129px;
+  align-items: center;
+
+  &__box {
     display: flex;
     flex-direction: column;
-    padding: 150px 129px;
-    align-items: center;
-
-    &__box{
-         margin-right: auto;
+    margin-right: auto;
     margin-left: auto;
-    }
 
+    &__filter {
+      display: flex;
+      flex-direction: row;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 50px;
+
+      &__search__btn {
+        max-width: 180px;
+        padding: 12px 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 12px;
+        background: $accent-color;
+        border: none;
+        margin-top: 24px;
+        margin-left: 18px;
+        text-decoration: none;
+        color: #fff;
+        font-family: Manrope;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 1.42857;
+        cursor: pointer;
+        transition: background-color 250ms linear, transform 250ms linear;
+        &:hover {
+          background-color: $hover-color;
+        }
+      }
+    }
+  }
+  &__load__btn{
+    display: flex;
+    border: none;
+    background: none;
+    color: $accent-color;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 500;
+    cursor: pointer;
+    
+    &:hover{
+        text-decoration: underline;
+    }
+    
+
+  }
 }

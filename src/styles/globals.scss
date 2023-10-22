@@ -16,3 +16,14 @@ body {
 li {
   list-style-type: none;
 }
+
+ input,
+  select,
+  button {
+    outline: none; 
+  }
+
+  body, html {
+    height: 100%;
+ 
+}

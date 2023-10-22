@@ -1,0 +1,29 @@
+@import '../../styles/utilities/mixins';
+@import '../../styles/utilities/variables';
+
+.container{
+    display: flex;
+   height: 100vh;
+   
+  
+}
+
+ .sidebar{
+    display: flex;
+    position: fixed;
+    margin-top: auto;
+    margin-bottom: auto;
+    background-color: $accent-color;
+    width: 220px;
+    min-height: 100%;
+
+  }
+.block{
+     display: flex;
+     width: 100%;
+  flex-direction: column;
+  padding: 60px 60px 60px 300px; 
+  align-items: center;
+
+ 
+}

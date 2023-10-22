@@ -1,0 +1,26 @@
+@import '../styles/utilities/mixins';
+@import '../styles/utilities/variables';
+
+.block {
+  background-image: url('../car-main.jpg');
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+  position: relative;
+  margin-top: -14px;
+
+  &__welcome {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-size: 48px;
+    z-index: 1; 
+    color: $accent-color; 
+    background-color: rgba(255, 255, 255, 0.7); 
+    padding: 20px;
+   
+    box-shadow: 0 0 10px rgba($accent-color, 0.5); 
+  }
+}

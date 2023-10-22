@@ -45,42 +45,56 @@ const CarCard = ({ car, onRemoveFavorite }) => {
 
   return (
     <div className={carCardStyles.block}>
-      <div className={carCardStyles.block__photo}>
-        <img
-          className={carCardStyles.block__photo__img}
-          src={car.img}
-          alt={`${car.make} ${car.model}`}
-        ></img>
-        <div className={carCardStyles.block__favorite__btn}>
-          <FavoriteButton
-            isFavorite={isCarFavorite}
-            onToggle={toggleFavorite}
-          />
+      <div className={carCardStyles.block__content}>
+        <div className={carCardStyles.block__photo}>
+          <img
+            className={carCardStyles.block__photo__img}
+            src={car.img}
+            alt={`${car.make} ${car.model}`}
+          ></img>
+          <div className={carCardStyles.block__favorite__btn}>
+            <FavoriteButton
+              isFavorite={isCarFavorite}
+              onToggle={toggleFavorite}
+            />
+          </div>
         </div>
-      </div>
-      <div className={carCardStyles.block__review}>
-        <div className={carCardStyles.block__review__name}>
-          {car.make}&nbsp;
-          <span className={carCardStyles.block__review__name__model}>
-            {car.model}
+        <div className={carCardStyles.block__review}>
+          <div className={carCardStyles.block__review__name}>
+            {car.make}&nbsp;
+            <span className={carCardStyles.block__review__name__model}>
+              {car.model}
+            </span>
+            , {car.year}
+            <p className={carCardStyles.block__review__price}>
+              {car.rentalPrice}
+            </p>
+          </div>
+        </div>
+        <div className={carCardStyles.block__overview}>
+          <span className={carCardStyles.block__overview__items}>{city}</span>
+          <span className={carCardStyles.block__overview__items}>
+            {country}
           </span>
-          , {car.year}
-          <p className={carCardStyles.block__review__price}>
-            {car.rentalPrice}
-          </p>
+          <span className={carCardStyles.block__overview__items}>
+            {car.rentalCompany}
+          </span>
+          <span className={carCardStyles.block__overview__items}>
+            {car.type}
+          </span>
+          <span className={carCardStyles.block__overview__items}>
+            {car.make}
+          </span>
+          <span className={carCardStyles.block__overview__items}>
+            {car.code}
+          </span>
+          <span className={carCardStyles.block__overview__items}>
+            {car.accessories[0]}
+          </span>
         </div>
-      </div>
-      <div className={carCardStyles.block__overview}>
-        <span className={carCardStyles.block__overview__items}>{city}</span>
-        <span className={carCardStyles.block__overview__items}>{country}</span>
-        <span className={carCardStyles.block__overview__items}>{car.rentalCompany}</span>
-        <span className={carCardStyles.block__overview__items}>{car.type}</span>
-        <span className={carCardStyles.block__overview__items}>{car.make}</span>
-        <span className={carCardStyles.block__overview__items}>{car.code}</span>
-        <span className={carCardStyles.block__overview__items}>{car.accessories[0]}</span>
 
-        <button type="button" onClick={openModal}>
-          Детальніше
+        <button className={carCardStyles.block__learn__btn } type="button" onClick={openModal}>
+          Learn more
         </button>
         <Modal isOpen={isModalOpen} onClose={closeModal} car={car}></Modal>
       </div>

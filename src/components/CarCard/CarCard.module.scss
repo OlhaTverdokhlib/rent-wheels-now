@@ -4,6 +4,14 @@
 .block {
   display: flex;
   flex-direction: column;
+  
+
+  &__content{
+    display: flex;
+    flex-direction: column;
+  
+    min-height: 426px;
+  }
 
   &__photo {
     width: 274px;
@@ -71,5 +79,28 @@
     top: 14px;
     right: 0;
     padding: 0;
+  }
+  &__learn__btn{
+    margin-top: auto;
+    padding: 12px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    background: $accent-color;
+    border: none;
+    text-decoration: none;
+    color: $background-primary;
+    font-family: Manrope;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.42857;
+    cursor: pointer;
+    transition: background-color 250ms linear, transform 250ms linear;
+
+    &:hover {
+      background-color: $hover-color;
+    }
   }
 }

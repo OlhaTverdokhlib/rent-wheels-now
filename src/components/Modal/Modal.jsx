@@ -3,21 +3,19 @@ import ReactDOM from 'react-dom';
 import modalStyles from './Modal.module.scss';
 
 const Modal = ({ isOpen, onClose, car }) => {
-  const carId = car?.id;
   const fullAddress = car ? car.address : '';
   const addressParts = fullAddress.split(',');
 
   const conditions = car.rentalConditions.split('\n');
- 
-const formatMileage = mileage => {
-return mileage.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
-};
+
+  const formatMileage = mileage => {
+    return mileage.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+  };
 
   const rentalConditions = car.rentalConditions;
   const parts = rentalConditions.split(':');
-  if (parts.length > 0) {
-    const minAge = parts[1].trim(); 
-    console.log(minAge); 
+  if (parts.length > 1) {
+    // const minAge = parts[1].trim();
   }
 
   const city = addressParts[1];

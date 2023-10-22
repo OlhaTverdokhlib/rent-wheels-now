@@ -7,7 +7,7 @@ const CatalogPage = () => {
     <div>
    
       <CarCatalog />
-      <h1>Catalog Page</h1>
+
     </div>
   );
 };
