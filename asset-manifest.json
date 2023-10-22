@@ -1,35 +1,36 @@
 {
   "files": {
     "main.css": "/rent-wheels-now/static/css/main.fd16f5a9.css",
-    "main.js": "/rent-wheels-now/static/js/main.47a5cf13.js",
+    "main.js": "/rent-wheels-now/static/js/main.70d19efa.js",
     "static/css/32.339f36b1.chunk.css": "/rent-wheels-now/static/css/32.339f36b1.chunk.css",
     "static/js/32.1306a21e.chunk.js": "/rent-wheels-now/static/js/32.1306a21e.chunk.js",
     "static/css/897.359e0b03.chunk.css": "/rent-wheels-now/static/css/897.359e0b03.chunk.css",
-    "static/js/897.26201e4f.chunk.js": "/rent-wheels-now/static/js/897.26201e4f.chunk.js",
+    "static/js/897.4ab1bb2e.chunk.js": "/rent-wheels-now/static/js/897.4ab1bb2e.chunk.js",
     "static/css/352.e65f1153.chunk.css": "/rent-wheels-now/static/css/352.e65f1153.chunk.css",
-    "static/js/352.72706973.chunk.js": "/rent-wheels-now/static/js/352.72706973.chunk.js",
-    "static/css/831.d93bdb26.chunk.css": "/rent-wheels-now/static/css/831.d93bdb26.chunk.css",
-    "static/js/831.12b8ce65.chunk.js": "/rent-wheels-now/static/js/831.12b8ce65.chunk.js",
-    "static/js/319.84a8d686.chunk.js": "/rent-wheels-now/static/js/319.84a8d686.chunk.js",
+    "static/js/352.ec5753c9.chunk.js": "/rent-wheels-now/static/js/352.ec5753c9.chunk.js",
+    "static/css/515.bf8c2af8.chunk.css": "/rent-wheels-now/static/css/515.bf8c2af8.chunk.css",
+    "static/js/515.f9beed35.chunk.js": "/rent-wheels-now/static/js/515.f9beed35.chunk.js",
+    "static/js/634.24e08653.chunk.js": "/rent-wheels-now/static/js/634.24e08653.chunk.js",
     "static/media/logoWeels.png": "/rent-wheels-now/static/media/logoWeels.9f93b9f0b286362c27c9.png",
     "static/media/Manrope-Medium.ttf": "/rent-wheels-now/static/media/Manrope-Medium.08894ccb04665d1a9d53.ttf",
     "static/media/Manrope-Regular.ttf": "/rent-wheels-now/static/media/Manrope-Regular.a9b9e09fe6b69741f316.ttf",
     "static/media/car-main.jpg": "/rent-wheels-now/static/media/car-main.831ea5c30caa9d38b657.jpg",
     "index.html": "/rent-wheels-now/index.html",
+    "static/media/sprite.svg": "/rent-wheels-now/static/media/sprite.f86eb48813eda54a8e670ca0602368f4.svg",
     "main.fd16f5a9.css.map": "/rent-wheels-now/static/css/main.fd16f5a9.css.map",
-    "main.47a5cf13.js.map": "/rent-wheels-now/static/js/main.47a5cf13.js.map",
+    "main.70d19efa.js.map": "/rent-wheels-now/static/js/main.70d19efa.js.map",
     "32.339f36b1.chunk.css.map": "/rent-wheels-now/static/css/32.339f36b1.chunk.css.map",
     "32.1306a21e.chunk.js.map": "/rent-wheels-now/static/js/32.1306a21e.chunk.js.map",
     "897.359e0b03.chunk.css.map": "/rent-wheels-now/static/css/897.359e0b03.chunk.css.map",
-    "897.26201e4f.chunk.js.map": "/rent-wheels-now/static/js/897.26201e4f.chunk.js.map",
+    "897.4ab1bb2e.chunk.js.map": "/rent-wheels-now/static/js/897.4ab1bb2e.chunk.js.map",
     "352.e65f1153.chunk.css.map": "/rent-wheels-now/static/css/352.e65f1153.chunk.css.map",
-    "352.72706973.chunk.js.map": "/rent-wheels-now/static/js/352.72706973.chunk.js.map",
-    "831.d93bdb26.chunk.css.map": "/rent-wheels-now/static/css/831.d93bdb26.chunk.css.map",
-    "831.12b8ce65.chunk.js.map": "/rent-wheels-now/static/js/831.12b8ce65.chunk.js.map",
-    "319.84a8d686.chunk.js.map": "/rent-wheels-now/static/js/319.84a8d686.chunk.js.map"
+    "352.ec5753c9.chunk.js.map": "/rent-wheels-now/static/js/352.ec5753c9.chunk.js.map",
+    "515.bf8c2af8.chunk.css.map": "/rent-wheels-now/static/css/515.bf8c2af8.chunk.css.map",
+    "515.f9beed35.chunk.js.map": "/rent-wheels-now/static/js/515.f9beed35.chunk.js.map",
+    "634.24e08653.chunk.js.map": "/rent-wheels-now/static/js/634.24e08653.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.fd16f5a9.css",
-    "static/js/main.47a5cf13.js"
+    "static/js/main.70d19efa.js"
   ]
 }
