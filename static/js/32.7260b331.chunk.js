@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkhalloween=self.webpackChunkhalloween||[]).push([[32],{32:function(e,l,c){c.r(l),c.d(l,{default:function(){return a}});c(791);var n={block:"MainPage_block__PZ-yf",block__welcome:"MainPage_block__welcome__TB7Fw"},o=c(184),a=function(){return(0,o.jsx)(o.Fragment,{children:(0,o.jsxs)("div",{className:n.block,children:[(0,o.jsx)("div",{className:n.block__welcome,children:"Welcome to Reels Rent Now!"}),(0,o.jsx)("p",{className:n.block__text})]})})}}}]);
+//# sourceMappingURL=32.7260b331.chunk.js.map
